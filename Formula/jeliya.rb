@@ -1,6 +1,6 @@
 # Homebrew formula for the `jeliyad` daemon.
 #
-# Currently filled for v0.4.2. v0.4.0 was the first release under the Jeliya
+# Currently filled for v0.4.3. v0.4.0 was the first release under the Jeliya
 # name (the project renamed from Bantaba on 2026-07-05; docs/naming.md). Earlier
 # releases shipped `bantabad-*` archives and cannot be installed by this formula.
 #
@@ -20,23 +20,23 @@ class Jeliya < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/kortiene/jeliya/releases/download/v0.4.2/jeliyad-v0.4.2-aarch64-apple-darwin.tar.gz"
-      sha256 "281999955999db45fc6ab8355b491a95f13e8701000ffe2efd2e1c6ba037ee96"
+      url "https://github.com/kortiene/jeliya/releases/download/v0.4.3/jeliyad-v0.4.3-aarch64-apple-darwin.tar.gz"
+      sha256 "84cad919bc8c93a81d30ff282e95c84058128ab395869b4fb5aa55b3d3986a75"
     end
     on_intel do
-      url "https://github.com/kortiene/jeliya/releases/download/v0.4.2/jeliyad-v0.4.2-x86_64-apple-darwin.tar.gz"
-      sha256 "7ac221c393a9d22e5b1c54a3c90b296576f66a3e0e02d64a72020cb6c54989cb"
+      url "https://github.com/kortiene/jeliya/releases/download/v0.4.3/jeliyad-v0.4.3-x86_64-apple-darwin.tar.gz"
+      sha256 "510042d86aaa95070f3fc7c911d92b568fe95678e2525f3bb2a673f10c8bfabe"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kortiene/jeliya/releases/download/v0.4.2/jeliyad-v0.4.2-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "95aa59d267d596c33934506986bcf6af84daaf5e7e028c32967229391b67382a"
+      url "https://github.com/kortiene/jeliya/releases/download/v0.4.3/jeliyad-v0.4.3-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "68d76cfb2701dd1f962fded82012390d0165fdebf4a77e3ab6d91ac7c6173df8"
     end
     on_intel do
-      url "https://github.com/kortiene/jeliya/releases/download/v0.4.2/jeliyad-v0.4.2-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "0831aa5a733cff5497a28cd18657e8cf92106f3b9d4be35dda030b6b92dd0eba"
+      url "https://github.com/kortiene/jeliya/releases/download/v0.4.3/jeliyad-v0.4.3-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "998d57f363de8e71ee2781526f91ff50bead13baa9d8562542a9edc0467a5f34"
     end
   end
 
