@@ -1,6 +1,6 @@
 # Homebrew formula for the `jeliyad` daemon.
 #
-# Currently filled for v0.4.1. v0.4.0 was the first release under the Jeliya
+# Currently filled for v0.4.2. v0.4.0 was the first release under the Jeliya
 # name (the project renamed from Bantaba on 2026-07-05; docs/naming.md). Earlier
 # releases shipped `bantabad-*` archives and cannot be installed by this formula.
 #
@@ -10,34 +10,33 @@
 #   brew install kortiene/jeliya/jeliya
 #
 # To update for a new release:
-#   1. Set `version` to the release number (no leading "v").
+#   1. Replace the release number in each URL.
 #   2. Replace each sha256 with the value from the matching release sidecar.
 #      The release workflow uploads a `<asset>.sha256` next to every archive.
 class Jeliya < Formula
-  desc "Jeliya peer-to-peer daemon (jeliyad): serves the Jeliya UI over a local WebSocket"
+  desc "Peer-to-peer daemon serving the Jeliya UI over a local WebSocket"
   homepage "https://github.com/kortiene/jeliya"
-  version "0.4.1"
-  license "MIT OR Apache-2.0"
+  license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/kortiene/jeliya/releases/download/v#{version}/jeliyad-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "b997bdc735bc5437c7974f5841d14a56d72c2bd89e3845866137566d30b38698"
+      url "https://github.com/kortiene/jeliya/releases/download/v0.4.2/jeliyad-v0.4.2-aarch64-apple-darwin.tar.gz"
+      sha256 "281999955999db45fc6ab8355b491a95f13e8701000ffe2efd2e1c6ba037ee96"
     end
     on_intel do
-      url "https://github.com/kortiene/jeliya/releases/download/v#{version}/jeliyad-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "a91e2cb9e794027d62e0551e9cef0c1fa58f60494801a903084b738480c4bf97"
+      url "https://github.com/kortiene/jeliya/releases/download/v0.4.2/jeliyad-v0.4.2-x86_64-apple-darwin.tar.gz"
+      sha256 "7ac221c393a9d22e5b1c54a3c90b296576f66a3e0e02d64a72020cb6c54989cb"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/kortiene/jeliya/releases/download/v#{version}/jeliyad-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "0bebf060bb30e088c056d82a41b1f7bc4317e3ae6daa03c01f4235c79919f8aa"
+      url "https://github.com/kortiene/jeliya/releases/download/v0.4.2/jeliyad-v0.4.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "95aa59d267d596c33934506986bcf6af84daaf5e7e028c32967229391b67382a"
     end
     on_intel do
-      url "https://github.com/kortiene/jeliya/releases/download/v#{version}/jeliyad-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "46fbb43762d1077943e30977c02dcd2acd0831903a0d2128aaa6382fb95ca26a"
+      url "https://github.com/kortiene/jeliya/releases/download/v0.4.2/jeliyad-v0.4.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "0831aa5a733cff5497a28cd18657e8cf92106f3b9d4be35dda030b6b92dd0eba"
     end
   end
 
